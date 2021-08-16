@@ -10,10 +10,11 @@ const Loading = () => {
         <img 
           src={ImessageLogo}
         />
-        <ThreeBounce 
+        {/* <ThreeBounce 
           color="#fff"
           size={20}
-        />
+        /> */}
+        <p>Loading...</p>
       </div>
     </div>
   )
