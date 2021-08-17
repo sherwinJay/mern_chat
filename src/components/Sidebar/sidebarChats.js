@@ -1,11 +1,10 @@
 import { Avatar } from "@material-ui/core"
-import { active, addChatBtn, sidebarChatRoom } from "./styles"
+import { active, sidebarChatRoom } from "./styles"
 // import db from '../../firebase'
-import { Link, NavLink, useParams } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
 import { useEffect, useState } from "react"
-import axios from "../../axios"
 
-const SidebarChat = ({id, name, conversation, addNewChat}) => {
+const SidebarChat = ({id, name, conversation }) => {
 
   const { roomId } = useParams();
   const [lastMessage, setLastMessage] = useState(null)

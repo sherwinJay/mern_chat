@@ -1,5 +1,4 @@
 import { Button } from '@material-ui/core';
-import React, { useState } from 'react';
 import { auth, provider } from '../../firebase';
 import { loginBox, loginContainer } from './styles';
 import ImessageLogo from '../../assets/images/imessage-logo.png'

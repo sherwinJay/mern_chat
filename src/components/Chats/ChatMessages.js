@@ -1,6 +1,6 @@
 import { chatMessage, chatTimestamp, chatUsername } from "./styles"
 
-const ChatMessages = ({ id, name, message, timestamp, userId, currentUser }) => {
+const ChatMessages = ({ name, message, timestamp, userId, currentUser }) => {
   return (
     <p className={`${chatMessage(userId === currentUser)}`}>
       <span className={chatUsername}>{name}</span>

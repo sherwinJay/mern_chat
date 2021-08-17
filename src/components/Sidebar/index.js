@@ -15,9 +15,7 @@ import { Link, useHistory } from 'react-router-dom';
 
 const Sidebar = ({rooms, setRooms, conversations}) => {
 
-  // const [rooms, setRooms] = useState([]);
   const [user] = useAuthState(auth);
-  const [socket, setSocket] = useState(null);
   const [filterRooms, setFilterRooms] = useState('');
   const [showPopupMessage, setShowPopupMessage] = useState(false);
   const history = useHistory();
