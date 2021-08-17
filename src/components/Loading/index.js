@@ -1,4 +1,4 @@
-import { ThreeBounce } from 'better-react-spinkit'
+// import { ThreeBounce } from 'better-react-spinkit'
 import { loadingContainer, loginWrapper } from './styles'
 import ImessageLogo from '../../assets/images/imessage-logo.png'
 
@@ -9,12 +9,13 @@ const Loading = () => {
       <div className={loadingContainer}>
         <img 
           src={ImessageLogo}
+          alt="loading"
         />
-        <ThreeBounce 
+        {/* <ThreeBounce 
           color="#fff"
           size={20}
-        />
-        {/* <p>Loading...</p> */}
+        /> */}
+        <p>Loading...</p>
       </div>
     </div>
   )

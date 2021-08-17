@@ -14,7 +14,10 @@ const Login = () => {
     <div className={loginContainer}>
       <h1>iMessage</h1>
       <div className={loginBox}>
-        <img src={ImessageLogo} />
+        <img 
+          src={ImessageLogo}
+          alt="iMessage logo"
+        />
         <Button onClick={signIn} variant="outlined">
           Sign in with Google
         </Button>
