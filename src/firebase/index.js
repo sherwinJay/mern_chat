@@ -2,12 +2,12 @@ import firebase from 'firebase';
 import 'firebase/app';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCBBuTndT9m1goO2zPdgMG-dYJSkOUMKls",
-  authDomain: "whatsapp-clone-8a3ce.firebaseapp.com",
-  projectId: "whatsapp-clone-8a3ce",
-  storageBucket: "whatsapp-clone-8a3ce.appspot.com",
-  messagingSenderId: "1062736227614",
-  appId: "1:1062736227614:web:7a69028abad5634b83ed0f"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
