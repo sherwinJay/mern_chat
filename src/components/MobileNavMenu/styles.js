@@ -11,6 +11,7 @@ export const sidebarContainer = (show) => css`
     position: fixed;
     height: 100vh;
     z-index: 9999;
+    background-color: #fff;
   }
 `;
 

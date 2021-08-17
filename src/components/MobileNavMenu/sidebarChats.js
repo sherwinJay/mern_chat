@@ -3,9 +3,8 @@ import { active, sidebarChatRoom } from "./styles"
 import { NavLink, useParams } from 'react-router-dom'
 import { useEffect, useState } from "react"
 
-const SidebarChat = ({id, name, conversation, addNewChat}) => {
+const SidebarChat = ({id, name, conversation, toggle}) => {
 
-  const { roomId } = useParams();
   const [lastMessage, setLastMessage] = useState(null)
 
   const getLastMessage = () => { 
@@ -29,7 +28,7 @@ const SidebarChat = ({id, name, conversation, addNewChat}) => {
   }, [conversation]);
 
   return (
-    <NavLink to={`/rooms/${id}`} className={sidebarChatRoom} activeClassName={active}>
+    <NavLink to={`/rooms/${id}`} className={sidebarChatRoom} activeClassName={active} onClick={toggle}>
       <Avatar src={lastMessage?.avatar}/>
       <div>
         <h3>{name}</h3>

@@ -7,7 +7,7 @@ export const chatContainer = css`
 
 export const chatHeader = css`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 0.82em;
   grid-gap: 0.5em;

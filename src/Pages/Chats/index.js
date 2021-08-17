@@ -8,7 +8,7 @@ import ChatFooter from '../../components/Chats/ChatFooter';
 import ChatMessages from '../../components/Chats/ChatMessages';
 
 
-const ChatsPage = ({conversations, setConversations, rooms, user}) => {
+const ChatsPage = ({conversations, setConversations, rooms, user, toggle}) => {
 
   const { roomId } = useParams();
   const [message, setMessage] = useState('');
@@ -59,7 +59,7 @@ const ChatsPage = ({conversations, setConversations, rooms, user}) => {
     // make chatHeader Component
     <div className={chatContainer}>
 
-      <ChatHeader chatName={currentRoom[0]?.chatName} />
+      <ChatHeader chatName={currentRoom[0]?.chatName} toggle={toggle}/>
 
       <div className={chatBody}>
         {

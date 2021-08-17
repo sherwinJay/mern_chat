@@ -11,16 +11,16 @@ import SearchIcon from "@material-ui/icons/Search"
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import CreateRoom from '../Modals/createRoom';
 import { Link, useHistory } from 'react-router-dom';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 
-const MobileNav = ({rooms, setRooms, conversations}) => {
+const MobileNav = ({rooms, setRooms, conversations, toggle, isOpen}) => {
 
   // const [rooms, setRooms] = useState([]);
   const [user] = useAuthState(auth);
   const [filterRooms, setFilterRooms] = useState('');
   const [showPopupMessage, setShowPopupMessage] = useState(false);
   const history = useHistory();
-  const [isShow, setIsShow] =  useState(false);
 
   const logout = () => {
     auth.signOut()
@@ -57,13 +57,15 @@ const MobileNav = ({rooms, setRooms, conversations}) => {
   }, [rooms])
 
   return (
-    <div className={sidebarContainer(isShow)}>
+    <div className={sidebarContainer(isOpen)}>
       <div className={sidebarHeader}>
         <div className={userContainer}>
           <Avatar src={user.photoURL} />
           <div>
             <h4>
-              <Link to="/" className={logo}>iMessage</Link>
+              <Link to="/" className={logo}>
+                iMessage
+              </Link>
             </h4>
             <p>{user.displayName}</p>
           </div>
@@ -91,7 +93,7 @@ const MobileNav = ({rooms, setRooms, conversations}) => {
           rooms.length > 0 ? rooms.filter(room => (
             filterRooms.length > 0 ? room.chatName.includes(filterRooms) : rooms     
           )).map(({_id, chatName, conversation}) => (
-            <SidebarChat key={_id} id={_id} name={chatName} conversation={conversation}/>
+            <SidebarChat key={_id} id={_id} name={chatName} conversation={conversation} toggle={toggle} />
           )) : 'no rooms'
         }
       </div>
