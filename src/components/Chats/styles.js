@@ -7,12 +7,23 @@ export const chatContainer = css`
 
 export const chatHeader = css`
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
   padding: 0.82em;
   grid-gap: 0.5em;
   border-bottom: 1px solid #ccc;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: auto 1fr auto;
+  }
 `;
+export const chatMenu = css`
+  display: none;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+`
 
 export const chatBody = css`
   padding: 2em 1.5em;

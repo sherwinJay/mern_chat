@@ -1,5 +1,5 @@
 import { Avatar } from "@material-ui/core"
-import { chatHeader } from './styles';
+import { chatHeader, chatMenu } from './styles';
 import MenuIcon from '@material-ui/icons/Menu';
 
 const ChatHeader = ({chatName, toggle}) => {
@@ -10,7 +10,9 @@ const ChatHeader = ({chatName, toggle}) => {
         <h3>{chatName}</h3>
         {/* <p>last message</p> */}
       </div>
-      <MenuIcon onClick={toggle} />
+      <span className={chatMenu}>
+        <MenuIcon onClick={toggle} />
+      </span>
     </div>
   )
 }

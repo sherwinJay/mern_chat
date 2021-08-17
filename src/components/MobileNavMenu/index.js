@@ -63,7 +63,7 @@ const MobileNav = ({rooms, setRooms, conversations, toggle, isOpen}) => {
           <Avatar src={user.photoURL} />
           <div>
             <h4>
-              <Link to="/" className={logo}>
+              <Link to="/" className={logo} onClick={toggle}>
                 iMessage
               </Link>
             </h4>
