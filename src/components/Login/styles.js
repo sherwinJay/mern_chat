@@ -24,4 +24,7 @@ export const loginBox = css`
     width: 10em;
     margin-bottom: 1em;
   }
+  @media screen and (max-width: 480px) {
+    padding: 1.8em 4em;
+  }
 `;

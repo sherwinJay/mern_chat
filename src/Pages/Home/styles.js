@@ -15,7 +15,7 @@ export const homeContainer = css`
     padding: 1.5em;
 
     & h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-top: 1.25em;
     }
   }
