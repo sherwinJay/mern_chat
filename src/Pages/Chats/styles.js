@@ -3,7 +3,7 @@ import { css, cx } from '@emotion/css'
 export const chatContainer = css`
   display: grid;
   grid-template-rows: 12vh 78vh 10vh;
-  height: 100vh;
+  height: fit-content;
 `;
 
 export const chatBody = css`
