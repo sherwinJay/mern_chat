@@ -12,6 +12,8 @@ export const chatHeader = css`
   padding: 0.82em;
   grid-gap: 0.5em;
   border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
 
   @media screen and (max-width: 480px) {
     grid-template-columns: auto 1fr auto;
