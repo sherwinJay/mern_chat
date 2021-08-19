@@ -12,9 +12,9 @@ export const chatHeader = css`
   padding: 0.82em;
   grid-gap: 0.5em;
   border-bottom: 1px solid #ccc;
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #fff; */
 
   @media screen and (max-width: 480px) {
     grid-template-columns: auto 1fr auto;
@@ -33,9 +33,9 @@ export const chatBody = css`
   overflow-y: scroll;
   max-height: 100%;
 
-  @media screen and (max-width: 480px) {
+  /* @media screen and (max-width: 480px) {
     padding-top: 2.5em;
-  }
+  } */
 `;
 
 export const chatUsername = css`
