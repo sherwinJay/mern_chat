@@ -5,7 +5,7 @@ export const chatContainer = css`
   grid-template-rows: 12vh 78vh 10vh;
   
   @media screen and (max-width: 480px) {
-    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
   }
 `;
 
@@ -20,9 +20,9 @@ export const chatHeader = css`
   top: 0;
   background-color: #fff; */
 
-  /* @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: auto 1fr auto;
-  } */
+  }
 `;
 export const chatMenu = css`
   display: none;
