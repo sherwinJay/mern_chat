@@ -6,6 +6,7 @@ export const chatContainer = css`
   
   @media screen and (max-width: 480px) {
     grid-template-rows: auto 1fr auto;
+    overflow: scroll;
   }
 `;
 
