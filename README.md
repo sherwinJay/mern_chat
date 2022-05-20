@@ -1,5 +1,9 @@
 ## MERN Chat App
 
-Link: https://mern-imessage-clone.netlify.app/
+-- ReactJS (CRA)
+-- Node / ExpressJS
+-- MongoDB
+-- Firebase (Authentication)
 
-ReactJS | ExpressJS | MongoDB | Firebase (Authentication)
+Link: https://mern-imessage-clone.netlify.app
+
